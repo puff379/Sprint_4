@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import samokat.MainPageElements;
 import samokat.OrderPageElements;
 import samokat.RentingPageElements;
@@ -17,8 +18,10 @@ public class OrderTests {
 
     @Before
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        //WebDriverManager.chromedriver().setup();
+        //driver = new ChromeDriver();
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
     }
     //создание заказа через верхнюю кнопку
     @Test

@@ -20,7 +20,7 @@ public class RentingPageElements {
     //окно подтверждения заказа
     private By acceptRentWindow = By.xpath("//div[@class='Order_ModalHeader__3FDaJ']");
     //кнопка Да в окне подтверждения заказа
-    private By okButton = By.xpath("//div[@class = 'Order_Buttons__1xGrp']/button[2]");
+    private By okButton = By.xpath("//*[@id=\"root\"]/div/div[2]/div[5]/div[2]/button[2]");
 
 
     //конструктор
